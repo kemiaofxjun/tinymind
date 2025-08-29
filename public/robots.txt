@@ -17,4 +17,4 @@ Disallow: /blog
 # Allow specific API endpoints that should be crawlable
 Allow: /api/manifest/
 
-Sitemap: https://tinymind.me/sitemap.xml 
+Sitemap: https://tinymind.kemeow.top/sitemap.xml 

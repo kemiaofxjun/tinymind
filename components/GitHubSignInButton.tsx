@@ -28,7 +28,7 @@ const GitHubSignInButton = () => {
         </Button>
         <p className="mt-2 text-sm text-gray-500 underline underline-offset-1">
           <a
-            href="https://tinymind.me/mazzzystar"
+            href="https://tinymind.kemeow.top/kemiaofxjun"
             target="_blank"
             rel="noopener noreferrer"
           >

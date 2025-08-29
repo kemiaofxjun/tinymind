@@ -62,9 +62,9 @@ async function ensureRepoExists(octokit: Octokit, owner: string, repo: string) {
       await octokit.repos.update({
         owner,
         repo,
-        description: `https://tinymind.me/${userLogin}`,
+        description: `https://tinymind.kemeow.top/${userLogin}`,
       });
-      console.log(`Updated repository description to https://tinymind.me/${userLogin}`);
+      console.log(`Updated repository description to https://tinymind.kemeow.top/${userLogin}`);
     }
   } catch (error) {
     if (error instanceof Error && 'status' in error && error.status === 404) {
@@ -92,7 +92,7 @@ async function ensureRepoExists(octokit: Octokit, owner: string, repo: string) {
           repo,
           path: 'README.md',
           message: 'Update README.md with default content',
-          content: Buffer.from('# TinyMind Blog\n\nWrite blog posts and thoughts at https://tinymind.me with data stored on GitHub.').toString('base64'),
+          content: Buffer.from('# TinyMind Blog\n\nWrite blog posts and thoughts at https://tinymind.kemeow.top with data stored on GitHub.').toString('base64'),
           sha: readmeContent.sha,
         });
         console.log('README.md updated with default content');
@@ -101,7 +101,7 @@ async function ensureRepoExists(octokit: Octokit, owner: string, repo: string) {
   } catch (error) {
     if (error instanceof Error && 'status' in error && error.status === 404) {
       // Create README.md if it doesn't exist
-      const content = Buffer.from('Write blog posts and thoughts at https://tinymind.me with data stored on GitHub.').toString('base64');
+      const content = Buffer.from('Write blog posts and thoughts at https://tinymind.kemeow.top with data stored on GitHub.').toString('base64');
       await octokit.repos.createOrUpdateFileContents({
         owner,
         repo,

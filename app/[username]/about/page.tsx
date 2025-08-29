@@ -21,7 +21,7 @@ export async function generateMetadata({
 }: {
   params: { username: string };
 }): Promise<Metadata> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://tinymind.me";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://tinymind.kemeow.top";
   const canonicalUrl = `${baseUrl}/${params.username}/about`;
 
   return {

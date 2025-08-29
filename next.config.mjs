@@ -39,10 +39,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.tinymind.me',
+            value: 'tinymind.kemeow.top',
           },
         ],
-        destination: 'https://tinymind.me/:path*',
+        destination: 'https://tinymind.kemeow.top/:path*',
         permanent: true,
       },
       // Redirect old paths that are causing duplicate content issues

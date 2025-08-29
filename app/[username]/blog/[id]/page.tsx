@@ -78,11 +78,11 @@ export async function generateMetadata({
     // If the image URL is relative, make it absolute
     if (imageUrl.startsWith("/")) {
       imageUrl = `${
-        process.env.NEXT_PUBLIC_BASE_URL || "https://tinymind.me"
+        process.env.NEXT_PUBLIC_BASE_URL || "https://tinymind.kemeow.top"
       }${imageUrl}`;
     }
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://tinymind.me";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://tinymind.kemeow.top";
 
     return {
       title: post.title,
